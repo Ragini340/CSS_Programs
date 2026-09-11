@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Program 014 - Pseudo Classes</title>
+    <meta charset="UTF-8">
+
+    <style>
+        input:focus {
+            outline: 2px solid red;
+        }
+
+        a:link {
+            color: teal;
+        }
+
+        a:visited {
+            color: lime;
+        }
+
+        a:hover {
+            background: #000;
+            color: #FFF;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        ol li:nth-child(odd) {
+            background: blue;
+            color: cyan;
+        }
+
+        ol li:nth-child(even) {
+            background: cyan;
+            color: blue;
+        }
+
+        :disabled {
+            color: darkgray;
+        }
+
+        :enabled {
+            color: blue;
+        }
+
+        :is(#i1, #i2) {
+            color: hotpink;
+        }
+
+        div:not(.d1) {
+            color: rgb(123, 108, 255);
+        }
+
+        .card:has(img) {
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Demo on Pseudo Classes</h2>
+
+    <input type="text">
+    <input type="text">
+    <input type="password">
+
+    <br><br>
+
+    <a href="ex101.html">Home</a>
+    <a href="">Products</a>
+    <a href="">Services</a>
+    <a href="">ContactUs</a>
+
+    <br>
+
+    <ol>
+        <li>Intel</li>
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>Cisco</li>
+        <li>SAP</li>
+        <li>Salesforce</li>
+        <li>AMD</li>
+        <li>IBM</li>
+        <li>ADP</li>
+        <li>HP</li>
+        <li>OpenText</li>
+    </ol>
+
+    <h1 id="i1">FAI</h1>
+    <h2 id="i2">TravTech</h2>
+
+    <div class="d1">Lenovo</div>
+    <div class="d2">HP</div>
+    <div class="d3">Asus</div>
+
+    <p class="d1">Acer</p>
+
+    <br>
+
+    <div class="card">
+        <img src="images/tiger.jpg" alt="Tiger">
+
+        <p>
+            This program is free software; you can redistribute it
+            and/or modify it under the terms of the GNU General Public
+            License as published by the Free Software Foundation.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <p>
+            This program is distributed in the hope that it will be
+            useful, but WITHOUT ANY WARRANTY.
+        </p>
+    </div>
+
+</body>
+</html>
