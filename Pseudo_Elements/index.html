@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Pseudo Elements</title>
+
+    <style>
+        /* Add content before the element */
+        h3::before {
+            content: "✳ ";
+        }
+
+        /* Add content after the element */
+        h3::after {
+            content: " 👍";
+        }
+
+        /* Style placeholder text */
+        input[type="text"]::placeholder {
+            color: pink;
+            text-align: center;
+        }
+
+        /* Style first character */
+        p::first-letter {
+            background: black;
+            color: white;
+            font-size: 2em;
+        }
+
+        /* Style first line */
+        p::first-line {
+            color: teal;
+        }
+
+        /* Style list markers */
+        ::marker {
+            color: blue;
+        }
+
+        /* Style selected text */
+        ::selection {
+            background: green;
+            color: yellow;
+        }
+
+        /* Style file upload button */
+        ::file-selector-button {
+            background: red;
+            color: white;
+            border: 0;
+            padding: 8px;
+        }
+
+        /* Style video/audio subtitles */
+        ::cue {
+            background: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Demo on Pseudo Elements</h2>
+
+    <h3>Ragini</h3>
+    <h3>Ragini Singh</h3>
+    <h3>Ragini Ragini</h3>
+
+    <br>
+
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
+
+    <p>
+        Uruguay might be tiny, but it's truly mighty when it comes to cattle.
+        This South American nation has millions of cows grazing its green
+        pastures. That's roughly four cows for every person.
+    </p>
+
+    <p>
+        Uruguay's wide grasslands and mild climate make it ideal for livestock.
+        Cattle farming has been the backbone of the economy for centuries.
+    </p>
+
+    <h3>Ordered List</h3>
+
+    <ol>
+        <li>Intel</li>
+        <li>Microsoft</li>
+        <li>Google</li>
+        <li>Apple</li>
+        <li>Cisco</li>
+        <li>AMD</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+
+    <ul>
+        <li>Salesforce</li>
+        <li>SAP</li>
+        <li>IBM</li>
+        <li>ADP</li>
+        <li>HP</li>
+        <li>OpenText</li>
+    </ul>
+
+    <br>
+
+    <input type="file">
+
+    <br><br>
+
+    <textarea rows="5" cols="50"
+              placeholder="Type something here..."></textarea>
+
+</body>
+</html>
