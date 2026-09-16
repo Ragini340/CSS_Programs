@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Specificity</title>
+
+    <style>
+        h2 {
+            color: red;
+        }
+
+        .c {
+            color: blue;
+        }
+
+        #i {
+            color: green;
+        }
+
+        h1 {
+            background: yellow !important;
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 id="i" class="c" style="color: hotpink;">
+        Demo on Selector Precedence (Specificity)
+    </h2>
+
+    <h1 style="background: lime; color: blue;">
+        Demo on !important option
+    </h1>
+
+</body>
+</html>
