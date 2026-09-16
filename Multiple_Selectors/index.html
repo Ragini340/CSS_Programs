@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Multiple Selectors</title>
+
+    <style>
+        /* Common styles for all images */
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px 30px;
+        }
+
+        /* Different corner shapes */
+        .i1 {
+            corner-shape: round;
+        }
+
+        .i2 {
+            corner-shape: bevel;
+        }
+
+        .i3 {
+            corner-shape: notch;
+        }
+
+        .i4 {
+            corner-shape: squircle;
+        }
+
+        .i5 {
+            corner-shape: superellipse(0.4);
+        }
+
+        .i6 {
+            corner-shape: round bevel;
+        }
+
+        /* Change image shape on hover */
+        img:hover {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Demo on Multiple Selectors</h2>
+
+    <img src="images/a.png" class="i1" alt="Image 1">
+    <img src="images/b.png" class="i2" alt="Image 2">
+    <img src="images/c.png" class="i3" alt="Image 3">
+    <img src="images/d.png" class="i4" alt="Image 4">
+
+</body>
+</html>
